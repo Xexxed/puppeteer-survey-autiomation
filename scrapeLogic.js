@@ -52,9 +52,9 @@ const scrapeLogic = async (res) => {
     // Wait for the iframe to load
     await page.waitForSelector("#QR\\~QID114");
     await page.type("#QR\\~QID114", "29293");
-    await new Promise((resolve) => setTimeout(resolve, 2500));
+    await new Promise((resolve) => setTimeout(resolve, 5000));
     await page.click("#NextButton");
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     await page.waitForSelector("#QR\\~QID6");
     await page.select("#QR\\~QID6", "38");
     console.log("State selected");
